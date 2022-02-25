@@ -1,0 +1,36 @@
+<div class="card-container">
+  <div class="title-container flex space-between">
+    <div class="spell-name">
+      {{ spellData.name }}
+    </div>
+    <div class="spell-level">
+      {{ spellData.level }} {{ spellData.isRitual ? "Ritual" : "" }}
+    </div>
+  </div>
+  <div class="school">
+    {{ spellData.school }}
+  </div>
+  <div class="casting-details flex">
+    <div>
+      {{ spellData.castingTime }}
+    </div>
+    <div>
+      {{ spellData.range }}
+    </div>
+    <div>
+      {{ spellData.duration }}
+    </div>
+  </div>
+  <div class="casting-requirements">
+    {{ spellData.components | json }}
+  </div>
+  <div class="description">
+    {{ spellData.description }}
+  </div>
+  <div class="higher-levels">
+    {{ spellData.atHigherLevels }}
+  </div>
+  <div class="source">
+    {{ spellData.source }}
+  </div>
+</div>

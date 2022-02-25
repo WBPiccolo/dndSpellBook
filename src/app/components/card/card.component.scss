@@ -1,0 +1,16 @@
+.card-container {
+  border-radius: 2px;
+  border: 2px solid green;
+}
+
+.title-container,
+.school,
+.casting-details,
+.casting-requirements,
+.description {
+  border-bottom: 1px solid green;
+}
+
+.casting-details > div {
+  margin-left: 3%;
+}
