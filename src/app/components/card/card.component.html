@@ -1,12 +1,19 @@
 <div class="card-container">
-  <div class="title-container flex space-between">
+  <div class="title-container flexbox-container">
     <div class="spell-name">
       {{ spellData.name }}
     </div>
-    <div class="spell-level">
+    <!--<div class="spell-level">
       {{ spellData.level }} {{ spellData.isRitual ? "Ritual" : "" }}
+    </div>-->
+  </div>
+  <div class="flexbox-container spell-level">
+    <div class="spell-level">
+      {{ spellData?.level === 'cantrip'? spellData.school +' '+ spellData.level: spellData.level +' '+ spellData.school}}
+      {{ spellData.isRitual ? "Ritual" : "" }}
     </div>
   </div>
+  <!--
   <div class="school">
     {{ spellData.school }}
   </div>
@@ -32,5 +39,5 @@
   </div>
   <div class="source">
     {{ spellData.source }}
-  </div>
+  </div>-->
 </div>
