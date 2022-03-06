@@ -1,4 +1,4 @@
-.spell-name{
+.spell-name {
   margin-right: auto;
   margin-left: auto;
 }
@@ -6,14 +6,25 @@
 .card-container {
   border-radius: 2px;
   border: 2px solid green;
+  width: 6cm;
+  height: 8.5cm;
+  position: relative;
+}
+
+.bottom-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .title-container,
-.school,
-.casting-details,
-.casting-requirements,
-.description {
+.spell-level,
+.casting-stats {
   border-bottom: 1px solid green;
+}
+
+.bottom-container {
+  border-top: 1px solid green;
 }
 
 .casting-details > div {

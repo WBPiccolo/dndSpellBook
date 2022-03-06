@@ -12,4 +12,8 @@ export class CardComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  getComponents(): string {
+    return JSON.stringify(this.spellData.components);
+  }
 }

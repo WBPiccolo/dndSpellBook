@@ -4,6 +4,7 @@ export interface Spell {
   school?: string;
   castingTime?: string;
   range?: string;
+  target?: string;
   duration?: string;
   components?: {
     verbal?: boolean;
@@ -14,4 +15,5 @@ export interface Spell {
   atHigherLevels?: string;
   isRitual?: boolean;
   source?: string;
+  requiresConcentration?: boolean;
 }

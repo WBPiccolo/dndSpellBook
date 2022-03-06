@@ -3,41 +3,43 @@
     <div class="spell-name">
       {{ spellData.name }}
     </div>
-    <!--<div class="spell-level">
-      {{ spellData.level }} {{ spellData.isRitual ? "Ritual" : "" }}
-    </div>-->
   </div>
-  <div class="flexbox-container spell-level">
-    <div class="spell-level">
-      {{ spellData?.level === 'cantrip'? spellData.school +' '+ spellData.level: spellData.level +' '+ spellData.school}}
+  <div class="flexbox-container spell-level space-evenly">
+    <div>
+      {{
+        spellData?.level === "cantrip"
+          ? spellData.school + " " + spellData.level
+          : spellData.level + " " + spellData.school
+      }}
       {{ spellData.isRitual ? "Ritual" : "" }}
     </div>
   </div>
-  <!--
-  <div class="school">
-    {{ spellData.school }}
-  </div>
-  <div class="casting-details flex">
+  <div class="casting-stats flexbox-container space-evenly">
     <div>
-      {{ spellData.castingTime }}
+      {{ spellData?.castingTime }}
     </div>
     <div>
-      {{ spellData.range }}
+      {{ spellData?.target }}
     </div>
     <div>
-      {{ spellData.duration }}
+      {{ spellData?.range }}
+    </div>
+    <div>{{ spellData?.duration }} {{ spellData?.requiresConcentration }}</div>
+  </div>
+  <div class="spell-text-container">
+    <div class="spell-text">
+      {{ spellData?.description }}
+    </div>
+    <div *ngIf="spellData?.atHigherLevels" class="spell-text-higher-levels">
+      {{ spellData?.atHigherLevels }}
     </div>
   </div>
-  <div class="casting-requirements">
-    {{ spellData.components | json }}
+  <div class="bottom-container">
+    <div class="spell-source">
+      {{ spellData?.source }}
+    </div>
+    <div class="spell-components">
+      {{ getComponents() }}
+    </div>
   </div>
-  <div class="description">
-    {{ spellData.description }}
-  </div>
-  <div class="higher-levels">
-    {{ spellData.atHigherLevels }}
-  </div>
-  <div class="source">
-    {{ spellData.source }}
-  </div>-->
 </div>
