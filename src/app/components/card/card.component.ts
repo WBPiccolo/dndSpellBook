@@ -14,6 +14,16 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {}
 
   getComponents(): string {
-    return JSON.stringify(this.spellData.components);
+    let formattedText = '';
+    this.spellData.components?.verbal ? (formattedText += 'V, ') : '';
+    this.spellData.components?.somatic ? (formattedText += 'S, ') : '';
+    this.spellData.components?.materials
+      ? (formattedText += this.spellData.components?.materials?.join(', '))
+      : '';
+    formattedText.trim();
+    formattedText[formattedText.length - 1] === ','
+      ? formattedText.slice(0, -1)
+      : '';
+    return formattedText;
   }
 }

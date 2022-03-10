@@ -9,7 +9,7 @@ export interface Spell {
   components?: {
     verbal?: boolean;
     somatic?: boolean;
-    material?: string[];
+    materials?: string[];
   };
   description?: string;
   atHigherLevels?: string;

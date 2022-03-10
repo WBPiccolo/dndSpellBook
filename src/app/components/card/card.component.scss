@@ -1,3 +1,6 @@
+div {
+  margin: 3px;
+}
 .spell-name {
   margin-right: auto;
   margin-left: auto;
@@ -27,6 +30,7 @@
   border-top: 1px solid green;
 }
 
-.casting-details > div {
-  margin-left: 3%;
+.spell-source {
+  font-size: 10pt;
+  font-style: italic;
 }
