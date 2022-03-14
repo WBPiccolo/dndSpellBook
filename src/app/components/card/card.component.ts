@@ -20,9 +20,10 @@ export class CardComponent implements OnInit {
     this.spellData.components?.materials
       ? (formattedText += this.spellData.components?.materials?.join(', '))
       : '';
-    formattedText.trim();
+    formattedText = formattedText.trim();
+    console.log(formattedText, formattedText[formattedText.length - 1] === ',');
     formattedText[formattedText.length - 1] === ','
-      ? formattedText.slice(0, -1)
+      ? formattedText = formattedText.replace(/,\s*$/, "")
       : '';
     return formattedText;
   }
