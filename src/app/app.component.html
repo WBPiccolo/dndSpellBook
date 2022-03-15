@@ -1,3 +1,7 @@
-<div class="card-wrapper">
+<div>
+  <button (click)="printCards()">STAMPA</button>
+</div>
+
+<div class="card-wrapper" #pdfTable>
   <card *ngFor="let spell of spellbook" [spellData]="spell"></card>
 </div>

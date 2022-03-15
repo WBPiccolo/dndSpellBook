@@ -50,4 +50,203 @@ export const mockSpellbook: Spell[] = [
       ' When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.',
     source: "Player's Handbook",
   },
+  {
+    name: 'False Life',
+    level: '1st',
+    school: 'Necromancy',
+    castingTime: '1 action',
+    range: 'Self',
+    duration: '1 hour',
+    components: {
+      verbal: true,
+      somatic: true,
+      materials: ['a small amount of alcohol or distilled spirits'],
+    },
+    description:
+      'Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.',
+    atHigherLevels:
+      ' When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.',
+    source: "Player's Handbook",
+  },
+  {
+    name: 'False Life',
+    level: '1st',
+    school: 'Necromancy',
+    castingTime: '1 action',
+    range: 'Self',
+    duration: '1 hour',
+    components: {
+      verbal: true,
+      somatic: true,
+      materials: ['a small amount of alcohol or distilled spirits'],
+    },
+    description:
+      'Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.',
+    atHigherLevels:
+      ' When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.',
+    source: "Player's Handbook",
+  },
+  {
+    name: 'False Life',
+    level: '1st',
+    school: 'Necromancy',
+    castingTime: '1 action',
+    range: 'Self',
+    duration: '1 hour',
+    components: {
+      verbal: true,
+      somatic: true,
+      materials: ['a small amount of alcohol or distilled spirits'],
+    },
+    description:
+      'Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.',
+    atHigherLevels:
+      ' When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.',
+    source: "Player's Handbook",
+  },
+  {
+    name: 'False Life',
+    level: '1st',
+    school: 'Necromancy',
+    castingTime: '1 action',
+    range: 'Self',
+    duration: '1 hour',
+    components: {
+      verbal: true,
+      somatic: true,
+      materials: ['a small amount of alcohol or distilled spirits'],
+    },
+    description:
+      'Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.',
+    atHigherLevels:
+      ' When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.',
+    source: "Player's Handbook",
+  },
+  {
+    name: 'False Life',
+    level: '1st',
+    school: 'Necromancy',
+    castingTime: '1 action',
+    range: 'Self',
+    duration: '1 hour',
+    components: {
+      verbal: true,
+      somatic: true,
+      materials: ['a small amount of alcohol or distilled spirits'],
+    },
+    description:
+      'Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.',
+    atHigherLevels:
+      ' When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.',
+    source: "Player's Handbook",
+  },
+  {
+    name: 'False Life',
+    level: '1st',
+    school: 'Necromancy',
+    castingTime: '1 action',
+    range: 'Self',
+    duration: '1 hour',
+    components: {
+      verbal: true,
+      somatic: true,
+      materials: ['a small amount of alcohol or distilled spirits'],
+    },
+    description:
+      'Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.',
+    atHigherLevels:
+      ' When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.',
+    source: "Player's Handbook",
+  },
+  {
+    name: 'False Life',
+    level: '1st',
+    school: 'Necromancy',
+    castingTime: '1 action',
+    range: 'Self',
+    duration: '1 hour',
+    components: {
+      verbal: true,
+      somatic: true,
+      materials: ['a small amount of alcohol or distilled spirits'],
+    },
+    description:
+      'Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.',
+    atHigherLevels:
+      ' When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.',
+    source: "Player's Handbook",
+  },
+  {
+    name: 'False Life',
+    level: '1st',
+    school: 'Necromancy',
+    castingTime: '1 action',
+    range: 'Self',
+    duration: '1 hour',
+    components: {
+      verbal: true,
+      somatic: true,
+      materials: ['a small amount of alcohol or distilled spirits'],
+    },
+    description:
+      'Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.',
+    atHigherLevels:
+      ' When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.',
+    source: "Player's Handbook",
+  },
+  {
+    name: 'False Life',
+    level: '1st',
+    school: 'Necromancy',
+    castingTime: '1 action',
+    range: 'Self',
+    duration: '1 hour',
+    components: {
+      verbal: true,
+      somatic: true,
+      materials: ['a small amount of alcohol or distilled spirits'],
+    },
+    description:
+      'Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.',
+    atHigherLevels:
+      ' When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.',
+    source: "Player's Handbook",
+  },
+  {
+    name: 'False Life',
+    level: '1st',
+    school: 'Necromancy',
+    castingTime: '1 action',
+    range: 'Self',
+    duration: '1 hour',
+    components: {
+      verbal: true,
+      somatic: true,
+      materials: ['a small amount of alcohol or distilled spirits'],
+    },
+    description:
+      'Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.',
+    atHigherLevels:
+      ' When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.',
+    source: "Player's Handbook",
+  },
+  {
+    name: 'False Life',
+    level: '1st',
+    school: 'Necromancy',
+    castingTime: '1 action',
+    range: 'Self',
+    duration: '1 hour',
+    components: {
+      verbal: true,
+      somatic: true,
+      materials: ['a small amount of alcohol or distilled spirits'],
+    },
+    description:
+      'Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.',
+    atHigherLevels:
+      ' When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.',
+    source: "Player's Handbook",
+  },
+  
 ];
