@@ -1,17 +1,36 @@
 div {
   margin: 3px;
 }
-.spell-name {
-  margin-right: auto;
-  margin-left: auto;
-}
 
 .card-container {
   border-radius: 2px;
   border: 2px solid green;
-  width: 6cm;
-  height: 8.5cm;
+  width: 7cm;
+  height: 9cm;
   position: relative;
+
+  .title-container {
+    .spell-name {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  .casting-stats {
+    font-size: 80%;
+    div {
+      width: 33%;
+    }
+  }
+
+  .spell-source {
+    font-size: 10pt;
+    font-style: italic;
+  }
+
+  .spell-components {
+    font-size: 12px;
+  }
 }
 
 .bottom-container {
@@ -28,9 +47,4 @@ div {
 
 .bottom-container {
   border-top: 1px solid green;
-}
-
-.spell-source {
-  font-size: 10pt;
-  font-style: italic;
 }

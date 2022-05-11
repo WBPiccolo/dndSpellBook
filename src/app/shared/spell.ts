@@ -1,10 +1,9 @@
 export interface Spell {
   name?: string;
-  level?: string;
+  level?: number;
   school?: string;
   castingTime?: string;
   range?: string;
-  target?: string;
   duration?: string;
   components?: {
     verbal?: boolean;

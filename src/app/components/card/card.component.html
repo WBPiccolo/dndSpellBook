@@ -6,27 +6,25 @@
   </div>
   <div class="flexbox-container spell-level space-evenly">
     <div>
-      {{
-        spellData?.level === "cantrip"
-          ? spellData.school + " " + spellData.level
-          : spellData.level + " level " + spellData.school
-      }}
-      {{ spellData.isRitual ? "Ritual" : "" }}
+      {{ getSpellCastingData() }}
     </div>
   </div>
-  <div class="casting-stats flexbox-container space-evenly">
+  <div class="casting-stats flexbox-container">
     <div>
       {{ spellData?.castingTime }}
     </div>
     <div>
-      {{ spellData?.target }}
-    </div>
-    <div>
       {{ spellData?.range }}
     </div>
-    <div>{{ spellData?.duration }} {{ spellData?.requiresConcentration }}</div>
+    <div>
+      {{ spellData?.duration }}
+      {{ spellData?.requiresConcentration ? "Concentrazione" : "" }}
+    </div>
   </div>
-  <div class="spell-text-container">
+  <div
+    class="spell-text-container"
+    [ngStyle]="{ 'font-size.px': calculateFontSize() }"
+  >
     <div class="spell-text">
       {{ spellData?.description }}
     </div>
