@@ -6,6 +6,7 @@ import { CardComponent } from './components/card/card.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { SpellbookComponent } from './components/spellbook/spellbook.component';
+import { DiceBoldPipe } from './pipes/dice-bold-pipe';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { SpellbookComponent } from './components/spellbook/spellbook.component';
     CardComponent,
     HomepageComponent,
     SpellbookComponent,
+    DiceBoldPipe,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

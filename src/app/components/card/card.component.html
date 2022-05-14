@@ -25,12 +25,15 @@
     class="spell-text-container"
     [ngStyle]="{ 'font-size.px': calculateFontSize() }"
   >
-    <div class="spell-text">
-      {{ spellData?.description }}
-    </div>
-    <div *ngIf="spellData?.atHigherLevels" class="spell-text-higher-levels">
-      {{ spellData?.atHigherLevels }}
-    </div>
+    <div
+      class="spell-text"
+      [innerHTML]="spellData?.description | diceBoldPipe"
+    ></div>
+    <div
+      *ngIf="spellData?.atHigherLevels"
+      class="spell-text-higher-levels"
+      [innerHTML]="spellData?.atHigherLevels | diceBoldPipe"
+    ></div>
   </div>
   <div class="bottom-container">
     <div class="spell-source">
