@@ -1,3 +1,7 @@
 <div class="card-wrapper">
-  <card *ngFor="let spell of spellbook" [spellData]="spell"></card>
+  <card
+    *ngFor="let spell of spellbook"
+    [type]="cardTypes.SPELL"
+    [spellData]="spell"
+  ></card>
 </div>

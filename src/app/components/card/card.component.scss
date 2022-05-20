@@ -1,26 +1,31 @@
 div {
   margin: 3px;
+  font-family: "Macondo", cursive;
 }
 
 .card-container {
   border-radius: 2px;
   border: 2px solid green;
-  width: 7cm;
-  height: 9cm;
+  height: 95%;
   position: relative;
 
   .title-container {
     .spell-name {
+      font-size: 12pt;
+      font-weight: 700;
       margin-right: auto;
       margin-left: auto;
     }
   }
 
+  .spell-level {
+    font-size: 10pt;
+  }
+
   .casting-stats {
+    font-style: italic;
     font-size: 80%;
-    div {
-      width: 33%;
-    }
+    justify-content: space-evenly;
   }
 
   .spell-source {
@@ -29,7 +34,7 @@ div {
   }
 
   .spell-components {
-    font-size: 12px;
+    font-size: 10pt;
   }
 }
 

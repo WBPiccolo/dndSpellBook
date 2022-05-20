@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Spell } from 'src/app/shared/spell';
+import { CardType, Spell } from 'src/app/shared/sharedTypes';
 
 @Component({
   selector: 'card',
@@ -8,7 +8,7 @@ import { Spell } from 'src/app/shared/spell';
 })
 export class CardComponent implements OnInit {
   @Input() spellData: Spell = {};
-
+  @Input() type: CardType = CardType.SPELL;
   constructor() {}
 
   ngOnInit(): void {}
@@ -36,7 +36,14 @@ export class CardComponent implements OnInit {
       castingData = `${this.spellData.level}° Livello`;
     }
     castingData += ` ${this.spellData.school}`;
-    castingData += this.spellData.isRitual ? 'Rituale' : '';
+    if (this.spellData.isRitual || this.spellData.requiresConcentration) {
+      castingData += `,`;
+    }
+    castingData += this.spellData.isRitual ? ' Rituale' : '';
+    castingData += this.spellData.requiresConcentration
+      ? ' Concentrazione'
+      : '';
+
     return castingData;
   }
 
@@ -61,7 +68,11 @@ export class CardComponent implements OnInit {
     // }
     // return fontSize;
 
+    if (charNumber >= 1000) {
+      return 15 - charNumber / 140;
+    }
+
     //Viva i magic numbers
-    return 15 - charNumber / 200;
+    return 15 - charNumber / 120;
   }
 }

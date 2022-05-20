@@ -1,3 +1,8 @@
+export enum CardType {
+  SPELL = 'Spell',
+  ABILITY = 'Ability',
+}
+
 export interface Spell {
   name?: string;
   level?: number;
@@ -15,4 +20,9 @@ export interface Spell {
   isRitual?: boolean;
   source?: string;
   requiresConcentration?: boolean;
+}
+
+export interface Ability {
+  name?: string;
+  source?: string;
 }

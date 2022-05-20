@@ -1,4 +1,4 @@
-import { Spell } from '../shared/spell';
+import { Spell } from '../shared/sharedTypes';
 
 export const mockSpell: Spell = {
   name: 'Eldritch Blast',
