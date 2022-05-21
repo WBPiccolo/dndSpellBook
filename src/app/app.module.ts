@@ -2,15 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { CardComponent } from './components/card/card.component';
+import { CardComponent } from './pages/spellbook/card/card.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HomepageComponent } from './components/homepage/homepage.component';
-import { SpellbookComponent } from './components/spellbook/spellbook.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { SpellbookComponent } from './pages/spellbook/spellbook.component';
 import { DiceBoldPipe } from './pipes/dice-bold-pipe';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormManagerComponent } from './components/form-manager/form-manager.component';
+import { FormManagerComponent } from './pages/homepage/form-manager/form-manager.component';
 
 @NgModule({
   declarations: [
