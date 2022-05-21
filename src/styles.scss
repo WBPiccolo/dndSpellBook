@@ -1,14 +1,6 @@
-.flexbox-container {
-  display: flex;
-}
-
-.space-evenly {
-  justify-content: space-evenly;
-}
-
-.space-around {
-  justify-content: space-around;
-}
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
 
 html,
 body {
@@ -19,6 +11,6 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-/* Importing Bootstrap SCSS file. */
-@import "~bootstrap/scss/bootstrap";
-@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+.row {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,187 @@
+<!--TODO: Radio per selezionare tra magia e abilità-->
+<!-- <div class="row">
+  <div class="col-12">
+    <div class="form-check form-switch">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="flexSwitchCheckDefault"
+      />
+      <label class="form-check-label" for="flexSwitchCheckDefault"
+        >Default switch checkbox input</label
+      >
+    </div>
+  </div>
+</div> -->
+<form [formGroup]="spellForm">
+  <div class="container form-group">
+    <!-- Titolo, Livello, Scuola-->
+    <div class="row">
+      <div class="col-4">
+        <label for="spellName" class="form-label">Nome della magia</label>
+        <input
+          type="text"
+          class="form-control"
+          id="spellName"
+          placeholder="Nome della magia"
+          aria-label="Nome della magia"
+          formControlName="name"
+        />
+      </div>
+      <div class="col-2">
+        <label for="level" class="form-label">Livello</label>
+        <select
+          class="form-control"
+          aria-placeholder="Scegli il livello"
+          id="level"
+          formControlName="level"
+        >
+          <option *ngFor="let item of spellLevels" [value]="item.level">
+            {{ item.text }}
+          </option>
+        </select>
+      </div>
+      <div class="col-2">
+        <label for="school" class="form-label">Scuola</label>
+        <select
+          class="form-control"
+          aria-placeholder="Scegli il livello"
+          id="school"
+          formControlName="school"
+        >
+          <option *ngFor="let school of spellSchools" [value]="school">
+            {{ school }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <!-- Tempo di cast, Gittata, Durata, Rituale, Concentrazione-->
+    <div class="row">
+      <div class="col-2">
+        <label for="castingTime" class="form-label">Tempo di cast</label>
+        <input
+          type="text"
+          class="form-control"
+          id="castingTime"
+          placeholder="Casting time"
+          aria-label="Casting time"
+          formControlName="castingTime"
+        />
+      </div>
+      <div class="col-2">
+        <label for="range" class="form-label">Gittata</label>
+        <input
+          type="text"
+          class="form-control"
+          id="range"
+          placeholder="range"
+          aria-label="range"
+          formControlName="range"
+        />
+      </div>
+      <div class="col-2">
+        <label for="duration" class="form-label">Durata</label>
+        <input
+          type="text"
+          class="form-control"
+          id="duration"
+          placeholder="duration"
+          aria-label="duration"
+          formControlName="duration"
+        />
+      </div>
+      <div class="col-2 my-auto">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          formControlName="isRitual"
+          id="isRitual"
+        />
+        <label class="form-check-label" for="isRitual"> Rituale </label>
+      </div>
+      <div class="col-2 my-auto">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          formControlName="requiresConcentration"
+          id="requiresConcentration"
+        />
+        <label class="form-check-label" for="requiresConcentration">
+          Concentrazione
+        </label>
+      </div>
+    </div>
+    <!-- Descrizione -->
+    <div class="row">
+      <div class="col-12">
+        <label for="description" class="form-label">description</label>
+        <textarea
+          class="form-control"
+          id="description"
+          rows="5"
+          formControlName="description"
+        ></textarea>
+      </div>
+    </div>
+    <!-- Ai livelli più alti-->
+    <div class="row">
+      <div class="col-12">
+        <label for="atHigherLevels" class="form-label">atHigherLevels</label>
+        <textarea
+          class="form-control"
+          id="atHigherLevels"
+          rows="3"
+          formControlName="atHigherLevels"
+        ></textarea>
+      </div>
+    </div>
+    <!-- Componenti-->
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-2 my-auto">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          formControlName="verbal"
+          id="verbal"
+        />
+        <label class="form-check-label" for="verbal"> Verbale </label>
+      </div>
+      <div class="col-2 my-auto">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          formControlName="somatic"
+          id="somatic"
+        />
+        <label class="form-check-label" for="somatic"> Somatica </label>
+      </div>
+      <div class="col-2 my-auto">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          formControlName="hasMaterials"
+          id="hasMaterials"
+        />
+        <label class="form-check-label" for="hasMaterials"> Materiali </label>
+      </div>
+      <div class="col-4">
+        <input
+          type="text"
+          class="form-control"
+          id="materials"
+          placeholder="Materiali"
+          aria-label="materials"
+          formControlName="materials"
+        />
+      </div>
+    </div>
+  </div>
+</form>
+<div class="row">
+  <div class="col-2 float-right">
+    <button type="button" class="btn btn-primary" (click)="saveSpell()">
+      aggiungi magia
+    </button>
+  </div>
+</div>

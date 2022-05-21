@@ -7,9 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { SpellbookComponent } from './components/spellbook/spellbook.component';
 import { DiceBoldPipe } from './pipes/dice-bold-pipe';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormManagerComponent } from './components/form-manager/form-manager.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomepageComponent,
     SpellbookComponent,
     DiceBoldPipe,
+    FormManagerComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,6 +27,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     NgbModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,6 +1,6 @@
-<div class="row">
+<!-- <div class="row">
   <div class="col-4 chips-container">
-    <!-- TODO: Chip spell, on click le rimuovi -->
+    <!-- TODO: Chip spell, on click le rimuovi --
   </div>
   <div class="col-4vai-allo-spellbook">
     <button class="btn btn-primary" (click)="saveSpell()">
@@ -12,45 +12,6 @@
       Vai allo spellbook
     </button>
   </div>
-</div>
+</div> -->
 
-<form [formGroup]="spellForm">
-  <div class="container">
-    <div class="row">
-      <div class="col-4">
-        <!-- <label for="spellName" class="form-label">Nome della magia</label> -->
-
-        <input
-          type="text"
-          class="form-control"
-          id="spellName"
-          placeholder="Nome della magia"
-          aria-label="Nome della magia"
-          formControlName="name"
-        />
-      </div>
-      <div class="col-2">
-        <select
-          class="form-control"
-          aria-placeholder="Scegli il livello"
-          formControlName="level"
-        >
-          <option *ngFor="let item of spellLevels" [value]="item.level">
-            {{ item.text }}
-          </option>
-        </select>
-      </div>
-      <div class="col-2">
-        <select
-          class="form-control"
-          aria-placeholder="Scegli il livello"
-          formControlName="school"
-        >
-          <option *ngFor="let school of spellSchools" [value]="school">
-            {{ school }}
-          </option>
-        </select>
-      </div>
-    </div>
-  </div>
-</form>
+<form-manager></form-manager>
