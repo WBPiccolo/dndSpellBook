@@ -1,5 +1,6 @@
 import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { SpellService } from 'src/app/services/spell.service';
 import { Spell } from 'src/app/shared/sharedTypes';
 
 @Component({
@@ -36,7 +37,9 @@ export class FormManagerComponent implements OnInit, OnChanges {
     'Altro',
   ];
 
-  constructor() {}
+  mySpells$ = this._spellService.spells$;
+
+  constructor(private _spellService: SpellService) {}
 
   ngOnInit(): void {
     this.spellForm = new FormGroup({
@@ -62,10 +65,6 @@ export class FormManagerComponent implements OnInit, OnChanges {
         ? this.spellForm.get('materials')?.enable()
         : this.spellForm.get('materials')?.disable();
     });
-
-    // this.spellForm.valueChanges.subscribe((newValue) => {
-    //   this.spellForm.get('hasMaterials').
-    // });
   }
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -79,6 +78,7 @@ export class FormManagerComponent implements OnInit, OnChanges {
     newSpell.name = formValue.name;
     newSpell.level = formValue.level;
     newSpell.school = formValue.school;
+    this._spellService.addSpell(newSpell);
     this.spellForm.reset();
     console.log('nuova spell:', newSpell);
   }

@@ -1,6 +1,6 @@
-<div class="card-wrapper">
+<div class="card-wrapper" *ngIf="{ spellBook: spellBook$ | async } as spells">
   <card
-    *ngFor="let spell of spellbook"
+    *ngFor="let spell of spells.spellBook"
     [type]="cardTypes.SPELL"
     [spellData]="spell"
   ></card>

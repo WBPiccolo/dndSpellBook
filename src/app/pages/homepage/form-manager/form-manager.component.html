@@ -176,12 +176,18 @@
         />
       </div>
     </div>
+
+    <!-- Bottone salva spell -->
+    <div class="row">
+      <div class="col-2 float-right">
+        <button type="button" class="btn btn-primary" (click)="saveSpell()">
+          aggiungi magia
+        </button>
+      </div>
+    </div>
   </div>
 </form>
+
 <div class="row">
-  <div class="col-2 float-right">
-    <button type="button" class="btn btn-primary" (click)="saveSpell()">
-      aggiungi magia
-    </button>
-  </div>
+  {{ mySpells$ | async }}
 </div>

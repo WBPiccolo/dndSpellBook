@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { mockSpellbook } from 'src/app/mock/spell';
+import { SpellService } from 'src/app/services/spell.service';
 import { Spell, CardType } from 'src/app/shared/sharedTypes';
 
 @Component({
@@ -7,9 +8,9 @@ import { Spell, CardType } from 'src/app/shared/sharedTypes';
   styleUrls: ['./spellbook.component.scss'],
 })
 export class SpellbookComponent implements OnInit {
-  spellbook: Spell[] = mockSpellbook;
+  spellBook$ = this._spellService.spells$;
   cardTypes = CardType;
-  constructor() {}
+  constructor(private _spellService: SpellService) {}
 
   ngOnInit(): void {}
 }
